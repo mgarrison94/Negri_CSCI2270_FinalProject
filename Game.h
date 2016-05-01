@@ -35,8 +35,8 @@ struct Player {
     int money;
     int bet;
     int currentBet;
-    bool check;
-    bool fold;
+    bool check = false;
+    bool fold = false;
     bool isPlayer1;
 
     Player(string n) {
@@ -69,7 +69,7 @@ public:
     bool twoOfKind2 = false, threeOfKind2 = false, fourOfKind2 = false, straight2 = false, fullHouse2 = false;
     bool TK = false, THK = false, FH = false;
     bool TK2 = false, THK2 = false, FH2 = false;
-    
+
 private:
     vector<Card> cards;
     vector<Card> fiveCards;
